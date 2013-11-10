@@ -174,7 +174,7 @@ namespace FUCounter_App
 			UpdateFsInformation(rec);
 			UpdateTableView();
 			NewRecord();
-			int i = 0;
+			int i = 0;   
 		}
 
 
