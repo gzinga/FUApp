@@ -11,10 +11,9 @@
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="FUCounter_App" expanded="True">
-            <Node name="Resources" expanded="True">
-              <Node name=".DS_Store" selected="True" />
-            </Node>
+            <Node name="Resources" expanded="True" />
             <Node name="FUCounter_AppViewController.cs" expanded="True" />
+            <Node name="MainStoryboard.storyboard" selected="True" />
           </Node>
         </State>
       </Pad>
