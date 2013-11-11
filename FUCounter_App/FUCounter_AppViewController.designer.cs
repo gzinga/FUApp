@@ -73,6 +73,18 @@ namespace FUCounter_App
 		MonoTouch.UIKit.UIButton KeyEnter { get; set; }
 
 		[Outlet]
+		MonoTouch.UIKit.UILabel LabelHairCount { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UILabel LabelTerminalHairCount { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UILabel LabelTxdHairCount { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UILabel LabelTxdTerminalHairCount { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UITextField ProcedureDate { get; set; }
 
 		[Outlet]
@@ -116,9 +128,24 @@ namespace FUCounter_App
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (ProcedureDate != null) {
-				ProcedureDate.Dispose ();
-				ProcedureDate = null;
+			if (LabelHairCount != null) {
+				LabelHairCount.Dispose ();
+				LabelHairCount = null;
+			}
+
+			if (LabelTerminalHairCount != null) {
+				LabelTerminalHairCount.Dispose ();
+				LabelTerminalHairCount = null;
+			}
+
+			if (LabelTxdHairCount != null) {
+				LabelTxdHairCount.Dispose ();
+				LabelTxdHairCount = null;
+			}
+
+			if (LabelTxdTerminalHairCount != null) {
+				LabelTxdTerminalHairCount.Dispose ();
+				LabelTxdTerminalHairCount = null;
 			}
 
 			if (Discarded != null) {
@@ -219,6 +246,11 @@ namespace FUCounter_App
 			if (KeyEnter != null) {
 				KeyEnter.Dispose ();
 				KeyEnter = null;
+			}
+
+			if (ProcedureDate != null) {
+				ProcedureDate.Dispose ();
+				ProcedureDate = null;
 			}
 
 			if (RecordBox != null) {
