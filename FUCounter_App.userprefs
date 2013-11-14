@@ -1,11 +1,11 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPad.7.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FUCounter_App/FUCounter_AppViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FUCounter_App/CaseCount.cs">
     <Files>
-      <File FileName="FUCounter_App/FUCounter_AppViewController.cs" Line="111" Column="59" />
+      <File FileName="FUCounter_App/FUCounter_AppViewController.cs" Line="213" Column="1" />
       <File FileName="FUCounter_App/FUCounter_AppViewController.designer.cs" Line="1" Column="1" />
       <File FileName="FUCounter_App/Main.cs" Line="1" Column="1" />
-      <File FileName="FUCounter_App/CaseCount.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/CaseCount.cs" Line="26" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

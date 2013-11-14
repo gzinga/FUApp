@@ -12,7 +12,8 @@ namespace FUCounter_App
 		public bool active;
 		public int numHair;
 		public int numTxHair;
-		public int NumDisc;
+		public int NumDiscHair;
+		private ArrayList _allRecords;
 		public GroupData()
 		{
 			group = 0;
@@ -21,7 +22,22 @@ namespace FUCounter_App
 			active = false;
 			numHair = 0;
 			numTxHair = 0;
-			NumDisc = 0;
+			NumDiscHair = 0;
+			_allRecords = new ArrayList ();
+		}
+		public void AddRecordTop(GraftRecord rec)
+		{
+			_allRecords.Add(rec);
+			// calculates FUs
+			FA [rec.HairCount-1]++;
+			FT [rec.TerminalHairCount-1]++;
+			// calculates total dx and tx
+			totalHair = FT [0] + FT [1] + FT [2] + FT [3];
+			totalTXHair = totalTXHair+rec.TxdTerminalHairCount;
+			totalTX = (double)totalTXHair / (double)totalHair;
+			totalTX *= 100;
+			// calculates transactions
+			//AllGroups[rec.GroupNumber-1]
 		}
 
 	}
@@ -80,7 +96,6 @@ namespace FUCounter_App
 			totalTX *= 100;
 			// calculates transactions
 			//AllGroups[rec.GroupNumber-1]
-
 		}
 
 		public int GetNumRecords()
