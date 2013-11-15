@@ -91,6 +91,9 @@ namespace FUCounter_App
 		MonoTouch.UIKit.UILabel LabelTxdTerminalHairCount { get; set; }
 
 		[Outlet]
+		MonoTouch.UIKit.UITextField PatientID { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UITextField ProcedureDate { get; set; }
 
 		[Outlet]
@@ -129,25 +132,31 @@ namespace FUCounter_App
 		[Action ("Button6Click:")]
 		partial void Button6Click (MonoTouch.Foundation.NSObject sender);
 
+		[Action ("ClearAll:")]
+		partial void ClearAll (MonoTouch.Foundation.NSObject sender);
+
 		[Action ("KeyEnterTouch:")]
 		partial void KeyEnterTouch (MonoTouch.Foundation.NSObject sender);
 
 		[Action ("LoadRecords:")]
 		partial void LoadRecords (MonoTouch.Foundation.NSObject sender);
 
+		[Action ("PatientIDEditEnd:")]
+		partial void PatientIDEditEnd (MonoTouch.Foundation.NSObject sender);
+
 		[Action ("SaveRecords:")]
 		partial void SaveRecords (MonoTouch.Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (ButtonSave != null) {
-				ButtonSave.Dispose ();
-				ButtonSave = null;
-			}
-
 			if (ButtonLoad != null) {
 				ButtonLoad.Dispose ();
 				ButtonLoad = null;
+			}
+
+			if (ButtonSave != null) {
+				ButtonSave.Dispose ();
+				ButtonSave = null;
 			}
 
 			if (Discarded != null) {
@@ -268,6 +277,11 @@ namespace FUCounter_App
 			if (LabelTxdTerminalHairCount != null) {
 				LabelTxdTerminalHairCount.Dispose ();
 				LabelTxdTerminalHairCount = null;
+			}
+
+			if (PatientID != null) {
+				PatientID.Dispose ();
+				PatientID = null;
 			}
 
 			if (ProcedureDate != null) {

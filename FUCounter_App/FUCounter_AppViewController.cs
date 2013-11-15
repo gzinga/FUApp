@@ -4,6 +4,8 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using System.Collections;
 using System.Xml;
+using System.IO;
+using System.Xml;
 
 namespace FUCounter_App
 {
@@ -56,7 +58,7 @@ namespace FUCounter_App
 			
 			// Perform any additional setup after loading the view, typically from a nib.
 			ProcedureDate.Text = DateTime.Today.ToString();
-			MasterRecord = new CaseCount (DateTime.Today);
+			MasterRecord = new CaseCount (DateTime.Today, PatientID.Text);
 			NewRecord ();
 			F1A.Text = F1T.Text = F2A.Text = F2T.Text = F3A.Text = F3T.Text = F3T.Text = F4T.Text = F4A.Text = "0";
 			redFlegEntry = false;
@@ -106,10 +108,17 @@ namespace FUCounter_App
 		}
 
 
-		private void UpdateTableView()
+		private void UpdateTableView(bool clear)
 		{
+			if (clear == true) {
+				String[] tableItems = new string[1];
+				tableItems[0] =string.Format("TOTAL # {0}, TX: {1:0.0} , DX: {2:0.0}", 0, 0, 0);
+				ResultsView.Source = new TableSource (tableItems);
+				ResultsView.ReloadData ();
+				return;
+			}
 			ArrayList tableList = new ArrayList ();
-			string a =string.Format("TOTAL TX: {0:0.0} , DX: {1:0.0}", MasterRecord.totalTX, MasterRecord.totalDX);
+			string a =string.Format("TOTAL # {0}, TX: {1:0.0} , DX: {2:0.0}", MasterRecord.totalHair, MasterRecord.totalTX, MasterRecord.totalDX);
 			int count = 0;
 			tableList.Add(a);
 			foreach (object obj in MasterRecord.AllGroups) 
@@ -123,8 +132,8 @@ namespace FUCounter_App
 				count++;
 				tableList.Add(a);
 			}
-			String[] tableItems = (String[]) tableList.ToArray( typeof( string ) );
-			ResultsView.Source = new TableSource (tableItems);
+			String[] tableItems1 = (String[]) tableList.ToArray( typeof( string ) );
+			ResultsView.Source = new TableSource (tableItems1);
 			ResultsView.ReloadData ();
 		}
 
@@ -196,7 +205,8 @@ namespace FUCounter_App
 			                                   GroupNumber.SelectedSegment+1);
 			MasterRecord.AddRecordTop(rec);
 			UpdateFsInformation(rec);
-			UpdateTableView();
+			SaveRecords(null);
+			UpdateTableView(false);
 			NewRecord();
 		}
 
@@ -317,6 +327,44 @@ namespace FUCounter_App
 		}
 
 
+		partial void SaveRecords (MonoTouch.Foundation.NSObject sender)
+		{
+			Type[] extraTypes = {typeof(GroupData),typeof(GraftRecord)};
+			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+			System.Xml.Serialization.XmlSerializer writer = 
+				new System.Xml.Serialization.XmlSerializer(typeof(CaseCount),extraTypes);
+
+			System.IO.StreamWriter file = new System.IO.StreamWriter(doc + "/" + MasterRecord.PatientID + ".xml");
+			writer.Serialize(file, MasterRecord);
+			file.Close();
+		}
+
+
+		partial void LoadRecords (MonoTouch.Foundation.NSObject sender)
+		{
+			UpdateTableView(true);
+			Type[] extraTypes = {typeof(GroupData),typeof(GraftRecord)};
+			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+			System.Xml.Serialization.XmlSerializer reader = 
+				new System.Xml.Serialization.XmlSerializer(typeof(CaseCount),extraTypes);
+
+			System.IO.StreamReader file = new System.IO.StreamReader(doc + "/" + MasterRecord.PatientID + ".xml");
+			MasterRecord = (CaseCount)reader.Deserialize(file);
+			file.Close();
+			UpdateTableView(false);
+			NewRecord();
+		}
+
+		partial void ClearAll (MonoTouch.Foundation.NSObject sender)
+		{
+			MasterRecord = new CaseCount();
+			UpdateTableView(true);
+			ViewDidLoad();
+		}
+		partial void PatientIDEditEnd (MonoTouch.Foundation.NSObject sender)
+		{
+			MasterRecord.PatientID = PatientID.Text;
+		}
 
 	}
 }

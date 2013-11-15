@@ -1,21 +1,26 @@
 using System;
 using System.Collections;
 using System.Xml;
+using System.IO;
 
 namespace FUCounter_App
 {
 
+	[Serializable]
 	public class GroupData
 	{
-		public int group;
-		public ArrayList _allRecords;
-		public int[] FA;
-		public int[] FT;
-		public double totalTX;
-		public double totalDX;
-		public int totalHair;
-		public int totalTXHair;
-		public bool Active;
+		public int group{ get; set;}
+		public ArrayList _allRecords{ get; set;}
+		public int[] FA{ get; set;}
+		public int[] FT{ get; set;}
+		public double totalTX{ get; set;}
+		public double totalDX{ get; set;}
+		public int totalHair{ get; set;}
+		public int totalTXHair{ get; set;}
+		public bool Active{ get; set;}
+
+		public GroupData(){
+		}
 
 		public GroupData(int _group)
 		{
@@ -48,26 +53,30 @@ namespace FUCounter_App
 	}
 
 
-
+	[Serializable]
 	public class CaseCount
 	{
-		private string _notes;
-		private DateTime _date;
-		public int[] TFA;
-		public int[] TFT;
-		public ArrayList AllGroups;
-		public double totalTX;
-		public double totalDX;
-		public int totalHair;
-		public int totalTXHair;
+		public string Notes{ get; set;}
+		public DateTime Date{ get; set;}
+		public int[] TFA{ get; set;}
+		public int[] TFT{ get; set;}
+		public ArrayList AllGroups{ get; set;}
+		public double totalTX{ get; set;}
+		public double totalDX{ get; set;}
+		public int totalHair{ get; set;}
+		public int totalTXHair{ get; set;}
+		public string PatientID { get; set;}
 
-		public CaseCount (DateTime date)
+		public CaseCount(){
+		}
+		public CaseCount (DateTime date, String patientID)
 		{
 			TFA = new int[4];
 			TFT = new int[4];
 			AllGroups = new ArrayList ();
-			_date = date;
-			_notes = "";
+			Date = date;
+			Notes = "";
+			PatientID = patientID;
 			totalTX = 0;
 			totalDX = 0;
 			totalHair = 0;
@@ -75,7 +84,7 @@ namespace FUCounter_App
 			for (int i=0;i<12;i++)
 				AllGroups.Add (new GroupData (i));
 		}
-
+	
 		public void AddRecordTop(GraftRecord rec)
 		{
 			((GroupData)AllGroups[rec.GroupNumber-1]).Active = true;
