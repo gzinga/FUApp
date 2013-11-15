@@ -13,6 +13,12 @@ namespace FUCounter_App
 	partial class FUCounter_AppViewController
 	{
 		[Outlet]
+		MonoTouch.UIKit.UIButton ButtonLoad { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIButton ButtonSave { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UITextField Discarded { get; set; }
 
 		[Outlet]
@@ -125,27 +131,23 @@ namespace FUCounter_App
 
 		[Action ("KeyEnterTouch:")]
 		partial void KeyEnterTouch (MonoTouch.Foundation.NSObject sender);
+
+		[Action ("LoadRecords:")]
+		partial void LoadRecords (MonoTouch.Foundation.NSObject sender);
+
+		[Action ("SaveRecords:")]
+		partial void SaveRecords (MonoTouch.Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (LabelHairCount != null) {
-				LabelHairCount.Dispose ();
-				LabelHairCount = null;
+			if (ButtonSave != null) {
+				ButtonSave.Dispose ();
+				ButtonSave = null;
 			}
 
-			if (LabelTerminalHairCount != null) {
-				LabelTerminalHairCount.Dispose ();
-				LabelTerminalHairCount = null;
-			}
-
-			if (LabelTxdHairCount != null) {
-				LabelTxdHairCount.Dispose ();
-				LabelTxdHairCount = null;
-			}
-
-			if (LabelTxdTerminalHairCount != null) {
-				LabelTxdTerminalHairCount.Dispose ();
-				LabelTxdTerminalHairCount = null;
+			if (ButtonLoad != null) {
+				ButtonLoad.Dispose ();
+				ButtonLoad = null;
 			}
 
 			if (Discarded != null) {
@@ -246,6 +248,26 @@ namespace FUCounter_App
 			if (KeyEnter != null) {
 				KeyEnter.Dispose ();
 				KeyEnter = null;
+			}
+
+			if (LabelHairCount != null) {
+				LabelHairCount.Dispose ();
+				LabelHairCount = null;
+			}
+
+			if (LabelTerminalHairCount != null) {
+				LabelTerminalHairCount.Dispose ();
+				LabelTerminalHairCount = null;
+			}
+
+			if (LabelTxdHairCount != null) {
+				LabelTxdHairCount.Dispose ();
+				LabelTxdHairCount = null;
+			}
+
+			if (LabelTxdTerminalHairCount != null) {
+				LabelTxdTerminalHairCount.Dispose ();
+				LabelTxdTerminalHairCount = null;
 			}
 
 			if (ProcedureDate != null) {

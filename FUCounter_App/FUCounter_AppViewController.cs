@@ -3,6 +3,7 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using System.Collections;
+using System.Xml;
 
 namespace FUCounter_App
 {
@@ -107,49 +108,61 @@ namespace FUCounter_App
 
 		private void UpdateTableView()
 		{
-			string[] tableItems = new string[10];
-			//tableItems[0] = "total TX: " + MasterRecord.totalTX + ", DX: " + MasterRecord.totoalDX;
-			string a =string.Format("total TX: {0:0.0} , DX: {1:0.0}", MasterRecord.totalTX, MasterRecord.totoalDX);
-			tableItems [0] = a;
-			ResultsView.Source = new TableSource(tableItems);
+			ArrayList tableList = new ArrayList ();
+			string a =string.Format("TOTAL TX: {0:0.0} , DX: {1:0.0}", MasterRecord.totalTX, MasterRecord.totalDX);
+			int count = 0;
+			tableList.Add(a);
+			foreach (object obj in MasterRecord.AllGroups) 
+			{
+				GroupData group = (GroupData)obj;
+				if (group.Active == false)
+					continue;
+				a = string.Format ("Group {0}, total TX: {1:0.0} , DX: {2:0.0}", group.group + 1,
+					(group).totalTX,
+					(group).totalDX);
+				count++;
+				tableList.Add(a);
+			}
+			String[] tableItems = (String[]) tableList.ToArray( typeof( string ) );
+			ResultsView.Source = new TableSource (tableItems);
 			ResultsView.ReloadData ();
 		}
 
 
 		private void UpdateFsInformation(GraftRecord rec)
 		{
+
 			switch (rec.TerminalHairCount) 
 			{
 			case 1:
-				F1T.Text = Convert.ToString(MasterRecord.FT[0]);
+				F1T.Text = Convert.ToString(MasterRecord.TFT[0]);
 			break;
 			case 2:
-				F2T.Text = Convert.ToString(MasterRecord.FT[1]);
+				F2T.Text = Convert.ToString(MasterRecord.TFT[1]);
 				break;
 			case 3:
-				F3T.Text = Convert.ToString(MasterRecord.FT[2]);
+				F3T.Text = Convert.ToString(MasterRecord.TFT[2]);
 				break;
 			case 4:
-				F4T.Text = Convert.ToString(MasterRecord.FT[3]);
+				F4T.Text = Convert.ToString(MasterRecord.TFT[3]);
 				break;
 			}
 
 			switch (rec.HairCount) 
 			{
 				case 1:
-				F1A.Text = Convert.ToString(MasterRecord.FA[0]);
+				F1A.Text = Convert.ToString(MasterRecord.TFA[0]);
 				break;
 				case 2:
-				F2A.Text = Convert.ToString(MasterRecord.FA[1]);
+				F2A.Text = Convert.ToString(MasterRecord.TFA[1]);
 				break;
 				case 3:
-				F3A.Text = Convert.ToString(MasterRecord.FA[2]);
+				F3A.Text = Convert.ToString(MasterRecord.TFA[2]);
 				break;
 				case 4:
-				F4A.Text = Convert.ToString(MasterRecord.FA[3]);
+				F4A.Text = Convert.ToString(MasterRecord.TFA[3]);
 				break;
 			}
-
 
 		}
 
