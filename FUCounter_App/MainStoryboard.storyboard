@@ -453,6 +453,16 @@
                                     <action selector="ClearAll:" destination="2" eventType="touchUpInside" id="PVJ-SY-1XG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vlz-qf-czV">
+                                <rect key="frame" x="631" y="92" width="124" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save FU File">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SaveFUFile:" destination="2" eventType="touchUpInside" id="Fgd-YE-HrR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -488,6 +498,7 @@
                         <outlet property="RecordBox" destination="adK-iT-2hy" id="Q3V-sP-twh"/>
                         <outlet property="ResultsView" destination="QmC-UE-1MA" id="rg3-mp-35H"/>
                         <outlet property="TerminalHairCountBox" destination="axr-xE-igN" id="46V-sU-HCQ"/>
+                        <outlet property="TextBoxProtocol" destination="nNp-gk-F5y" id="fkM-0T-tFT"/>
                         <outlet property="TxdHairCountBox" destination="xjZ-BS-1yj" id="34a-1O-05g"/>
                         <outlet property="TxdTerminalHairCount" destination="6pi-vB-rfG" id="WqK-p8-hAK"/>
                     </connections>

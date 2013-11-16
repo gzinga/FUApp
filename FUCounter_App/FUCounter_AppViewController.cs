@@ -366,6 +366,45 @@ namespace FUCounter_App
 			MasterRecord.PatientID = PatientID.Text;
 		}
 
+		partial void SaveFUFile (MonoTouch.Foundation.NSObject sender)
+		{
+			// converts master record into FU file
+			FUCounterDataSet FU1 = new FUCounterDataSet(Convert.ToInt16(RecordBox.Text));
+			FU1.Subject.MicroscopicNotes = MasterRecord.Notes;
+			FU1.Subject.PatientID = MasterRecord.PatientID;
+			FU1.Subject.ProcedureDate = MasterRecord.Date;
+			FU1.Subject.Protocol = TextBoxProtocol.Text;
+			int i = 0;
+			foreach (object Group in MasterRecord.AllGroups)
+			{
+				foreach (object record in ((GroupData)Group)._allRecords)
+				{
+					GraftRecord rec = (GraftRecord)record;
+					FUCounter FUrec = new FUCounter();
+					FUrec.Discarded = rec.Discard==true?1:0;
+					FUrec.GroupNumber = rec.GroupNumber;
+					FUrec.HairCount = rec.HairCount;
+					FUrec.TerminalHairCount = rec.TerminalHairCount;
+					FUrec.TxdHairCount = rec.TxdHairCount;
+					FUrec.TxdTerminalHairCount = rec.TxdTerminalHairCount;
+					FU1.data[i] = FUrec;
+					i++;
+				}
+			}
+
+
+
+			//now saves it
+			Type[] extraTypes = {typeof(FUCounter),typeof(Subject)};
+			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+			System.Xml.Serialization.XmlSerializer writer = 
+				new System.Xml.Serialization.XmlSerializer(typeof(FUCounterDataSet),extraTypes);
+
+			System.IO.StreamWriter file = new System.IO.StreamWriter(doc + "/" + MasterRecord.PatientID + ".FU1");
+			writer.Serialize(file, FU1);
+			file.Close();
+		}
+
 	}
 }
 

@@ -3,3 +3,4 @@
 /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/iPhone/Debug/mtouch-cache/Link/System.dll
 /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/iPhone/Debug/mtouch-cache/Link/System.Xml.dll
 /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll
+/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/iPhone/Debug/mtouch-cache/Link/System.Core.dll

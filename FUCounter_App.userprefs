@@ -1,13 +1,22 @@
 ﻿<Properties GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPad.7.0" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Gabriele Zingaretti’s mini iPad" />
   <MonoDevelop.Ide.Workbench ActiveDocument="FUCounter_App/FUCounter_AppViewController.cs">
     <Files>
-      <File FileName="FUCounter_App/FUCounter_AppViewController.cs" Line="329" Column="85" />
-      <File FileName="FUCounter_App/FUCounter_AppViewController.designer.cs" Line="1" Column="1" />
-      <File FileName="FUCounter_App/Main.cs" Line="1" Column="1" />
-      <File FileName="FUCounter_App/CaseCount.cs" Line="1" Column="1" />
-      <File FileName="FUCounter_App/GraftRecord.cs" Line="1" Column="1" />
+      <File FileName="FUCounter_App/FUCounterDataSet.cs" Line="42" Column="3" />
+      <File FileName="FUCounter_App/FUCounter_AppViewController.cs" Line="372" Column="64" />
+      <File FileName="FUCounter_App/Info.plist" />
+      <File FileName="FUCounter_App/CaseCount.cs" Line="22" Column="22" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="FUCounter_App" expanded="True">
+            <Node name="FUCounter_AppViewController.cs" expanded="True" />
+            <Node name="MainStoryboard.storyboard" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
@@ -15,4 +24,7 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FUCounter__App>
+    <MonoDevelop.MacDev.AppleDevelopmentTeam DeveloperId="M8K8X9UQSG" TeamId="EL299W6TY7" />
+  </MonoDevelop.Ide.ItemProperties.FUCounter__App>
 </Properties>

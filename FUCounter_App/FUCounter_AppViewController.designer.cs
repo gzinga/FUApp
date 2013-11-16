@@ -106,6 +106,9 @@ namespace FUCounter_App
 		MonoTouch.UIKit.UITextField TerminalHairCountBox { get; set; }
 
 		[Outlet]
+		MonoTouch.UIKit.UITextField TextBoxProtocol { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UITextField TxdHairCountBox { get; set; }
 
 		[Outlet]
@@ -144,6 +147,9 @@ namespace FUCounter_App
 		[Action ("PatientIDEditEnd:")]
 		partial void PatientIDEditEnd (MonoTouch.Foundation.NSObject sender);
 
+		[Action ("SaveFUFile:")]
+		partial void SaveFUFile (MonoTouch.Foundation.NSObject sender);
+
 		[Action ("SaveRecords:")]
 		partial void SaveRecords (MonoTouch.Foundation.NSObject sender);
 		
@@ -152,6 +158,11 @@ namespace FUCounter_App
 			if (ButtonLoad != null) {
 				ButtonLoad.Dispose ();
 				ButtonLoad = null;
+			}
+
+			if (TextBoxProtocol != null) {
+				TextBoxProtocol.Dispose ();
+				TextBoxProtocol = null;
 			}
 
 			if (ButtonSave != null) {
