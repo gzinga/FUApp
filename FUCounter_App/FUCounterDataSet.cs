@@ -23,7 +23,7 @@ namespace FUCounter_App
 		public int TxdHairCount{ get; set;}
 		public int TerminalHairCount{ get; set;}
 		public int TxdTerminalHairCount{ get; set;}
-		public int Discarded{ get; set;}
+		public bool Discarded{ get; set;}
 		public int GroupNumber{ get; set;}
 	}
 

@@ -366,6 +366,7 @@ namespace FUCounter_App
 			MasterRecord.PatientID = PatientID.Text;
 		}
 
+
 		partial void SaveFUFile (MonoTouch.Foundation.NSObject sender)
 		{
 			// converts master record into FU file
@@ -381,7 +382,7 @@ namespace FUCounter_App
 				{
 					GraftRecord rec = (GraftRecord)record;
 					FUCounter FUrec = new FUCounter();
-					FUrec.Discarded = rec.Discard==true?1:0;
+					FUrec.Discarded = rec.Discard;
 					FUrec.GroupNumber = rec.GroupNumber;
 					FUrec.HairCount = rec.HairCount;
 					FUrec.TerminalHairCount = rec.TerminalHairCount;
@@ -391,10 +392,24 @@ namespace FUCounter_App
 					i++;
 				}
 			}
+			SaveFUFileUsingXMLWriter(FU1);
+			return;
+			/*
+			XmlWriterSettings settings = new XmlWriterSettings();
+			settings.Indent = false;
+			settings.NewLineHandling = NewLineHandling.None;
+			//settings.OtherProperties = values;
 
-
-
+			using (XmlWriter writer = XmlWriter.Create(CreateStream(), settings))
+			{
+				_serializer.Serialize(o, writer);
+			}
+*/
 			//now saves it
+			XmlWriterSettings settings = new XmlWriterSettings();
+			settings.Indent = false;
+			settings.NewLineHandling = NewLineHandling.None;
+
 			Type[] extraTypes = {typeof(FUCounter),typeof(Subject)};
 			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
 			System.Xml.Serialization.XmlSerializer writer = 
@@ -405,6 +420,51 @@ namespace FUCounter_App
 			file.Close();
 		}
 
+
+
+		private void SaveFUFileUsingXMLWriter(FUCounterDataSet FU1)
+		{
+			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+			string fileName = doc + "/" + MasterRecord.PatientID + ".FU1";
+
+			XmlWriterSettings settings = new XmlWriterSettings();
+			settings.Indent = true;
+			settings.IndentChars = ("    ");
+			settings.NewLineChars = "\r\n";
+			using (XmlWriter writer = XmlWriter.Create(fileName,settings))
+			{
+				writer.WriteStartDocument(true);
+				writer.WriteStartElement("FUCounterDataSet","http://www.restorationrobotics.com/FUCounterDataSet.xsd");
+				FUCounter[] allRec = FU1.data;
+				foreach (FUCounter rec in allRec) 
+				{
+					if (rec == null)
+						continue;
+					writer.WriteStartElement("FUCounter");
+
+					writer.WriteElementString("HairCount", rec.HairCount.ToString());
+					writer.WriteElementString("TxdHairCount", rec.TxdHairCount.ToString());
+					writer.WriteElementString("TerminalHairCount", rec.TerminalHairCount.ToString());
+					writer.WriteElementString("TxdTerminalHairCount", rec.TxdTerminalHairCount.ToString());
+					writer.WriteElementString("Discarded", rec.Discarded.ToString().ToLower());
+					writer.WriteElementString("GroupNumber", rec.GroupNumber.ToString());
+
+					writer.WriteEndElement();
+				}
+
+				string dateXSD = FU1.Subject.ProcedureDate.ToString ("yyyy-MM-ddTHH:mm:ss+HH:mm");
+				writer.WriteStartElement("Subject");
+				writer.WriteElementString("PatientId ", FU1.Subject.PatientID);
+				writer.WriteElementString("ProcedureDate", dateXSD);
+				writer.WriteElementString("Protocol", FU1.Subject.Protocol);
+				writer.WriteElementString("MicroscopyNotes", FU1.Subject.MicroscopicNotes);
+				writer.WriteEndElement();
+
+				writer.WriteEndElement();
+				writer.WriteEndDocument();
+			}
+
+		}
 	}
 }
 
