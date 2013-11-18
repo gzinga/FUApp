@@ -51,7 +51,7 @@ namespace FUCounter_App
 		{
 			base.PrepareForSegue (segue, sender);
 
-			((FUCounter_AppViewController)segue.DestinationViewController).LoadFile (FileToLoad);
+			((FUCounter_AppViewController)segue.DestinationViewController).SetFileToLoad(FileToLoad);
 		}
 	}
 }

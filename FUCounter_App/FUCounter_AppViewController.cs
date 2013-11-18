@@ -73,10 +73,13 @@ namespace FUCounter_App
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			
+
 			// Perform any additional setup after loading the view, typically from a nib.
-			if (firstTime != true)
+			if (firstTime == false) 
+			{
+				LoadFile (FileToLoad);
 				return;
+			}
 			ProcedureDate.Text = DateTime.Today.ToString();
 			MasterRecord = new CaseCount (DateTime.Today, PatientID.Text);
 			NewRecord ();
@@ -361,6 +364,12 @@ namespace FUCounter_App
 			SaveFUFile(sender);
 		}
 
+		public string FileToLoad = "";
+		public void SetFileToLoad(string fileName)
+		{
+			FileToLoad = fileName;
+			firstTime = false;
+		}
 
 		public void LoadFile(String fileName)
 		{
@@ -370,12 +379,11 @@ namespace FUCounter_App
 			System.Xml.Serialization.XmlSerializer reader = 
 				new System.Xml.Serialization.XmlSerializer(typeof(CaseCount),extraTypes);
 
-			System.IO.StreamReader file = new System.IO.StreamReader(doc + "/" + MasterRecord.PatientID + ".xml");
+			System.IO.StreamReader file = new System.IO.StreamReader(fileName);
 			MasterRecord = (CaseCount)reader.Deserialize(file);
 			file.Close();
 			UpdateTableView(false);
 			NewRecord();
-
 		}
 
 
