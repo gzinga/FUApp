@@ -114,6 +114,10 @@
       <DependentUpon>AppDelegate.cs</DependentUpon>
     </Compile>
     <Compile Include="FUCounterDataSet.cs" />
+    <Compile Include="LoadViewController.cs" />
+    <Compile Include="LoadViewController.designer.cs">
+      <DependentUpon>LoadViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />

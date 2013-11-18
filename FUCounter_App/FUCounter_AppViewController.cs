@@ -5,16 +5,17 @@ using MonoTouch.UIKit;
 using System.Collections;
 using System.Xml;
 using System.IO;
-using System.Xml;
 
 namespace FUCounter_App
 {
 	public class TableSource : UITableViewSource {
 		protected string[] tableItems;
 		protected string cellIdentifier = "TableCell";
+		public int lastSelectedRow;
 		public TableSource (string[] items)
 		{
 			tableItems = items;
+			lastSelectedRow = 0;
 		}
 		public override int RowsInSection (UITableView tableview, int section)
 		{
@@ -30,6 +31,22 @@ namespace FUCounter_App
 			cell.TextLabel.Text = tableItems[indexPath.Row];
 			return cell;
 		}
+
+		public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
+		{
+			lastSelectedRow = indexPath.Row;
+			//new UIAlertView("Row Selected", tableItems[indexPath.Row], null, "OK", null).Show();
+			//tableView.DeselectRow (indexPath, true); // iOS convention is to remove the highlight
+		}
+		public int GetLastSelectedRow()
+		{
+			return lastSelectedRow;
+		}
+
+		public string[] GetAllRows()
+		{
+			return tableItems;
+		}
 	}
 
 
@@ -39,6 +56,7 @@ namespace FUCounter_App
 		private int _workflowCounter = 0;
 		public CaseCount MasterRecord;
 		public bool redFlegEntry;
+		private bool firstTime = true;
 		public FUCounter_AppViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -57,11 +75,14 @@ namespace FUCounter_App
 			base.ViewDidLoad ();
 			
 			// Perform any additional setup after loading the view, typically from a nib.
+			if (firstTime != true)
+				return;
 			ProcedureDate.Text = DateTime.Today.ToString();
 			MasterRecord = new CaseCount (DateTime.Today, PatientID.Text);
 			NewRecord ();
 			F1A.Text = F1T.Text = F2A.Text = F2T.Text = F3A.Text = F3T.Text = F3T.Text = F4T.Text = F4A.Text = "0";
 			redFlegEntry = false;
+			firstTime = false;
 		}
 
 		public override void ViewWillAppear (bool animated)
@@ -337,10 +358,11 @@ namespace FUCounter_App
 			System.IO.StreamWriter file = new System.IO.StreamWriter(doc + "/" + MasterRecord.PatientID + ".xml");
 			writer.Serialize(file, MasterRecord);
 			file.Close();
+			SaveFUFile(sender);
 		}
 
 
-		partial void LoadRecords (MonoTouch.Foundation.NSObject sender)
+		public void LoadFile(String fileName)
 		{
 			UpdateTableView(true);
 			Type[] extraTypes = {typeof(GroupData),typeof(GraftRecord)};
@@ -353,6 +375,25 @@ namespace FUCounter_App
 			file.Close();
 			UpdateTableView(false);
 			NewRecord();
+
+		}
+
+
+		partial void LoadRecords (MonoTouch.Foundation.NSObject sender)
+		{
+			/*
+			UpdateTableView(true);
+			Type[] extraTypes = {typeof(GroupData),typeof(GraftRecord)};
+			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+			System.Xml.Serialization.XmlSerializer reader = 
+				new System.Xml.Serialization.XmlSerializer(typeof(CaseCount),extraTypes);
+
+			System.IO.StreamReader file = new System.IO.StreamReader(doc + "/" + MasterRecord.PatientID + ".xml");
+			MasterRecord = (CaseCount)reader.Deserialize(file);
+			file.Close();
+			UpdateTableView(false);
+			NewRecord();
+			*/
 		}
 
 		partial void ClearAll (MonoTouch.Foundation.NSObject sender)
@@ -393,31 +434,6 @@ namespace FUCounter_App
 				}
 			}
 			SaveFUFileUsingXMLWriter(FU1);
-			return;
-			/*
-			XmlWriterSettings settings = new XmlWriterSettings();
-			settings.Indent = false;
-			settings.NewLineHandling = NewLineHandling.None;
-			//settings.OtherProperties = values;
-
-			using (XmlWriter writer = XmlWriter.Create(CreateStream(), settings))
-			{
-				_serializer.Serialize(o, writer);
-			}
-*/
-			//now saves it
-			XmlWriterSettings settings = new XmlWriterSettings();
-			settings.Indent = false;
-			settings.NewLineHandling = NewLineHandling.None;
-
-			Type[] extraTypes = {typeof(FUCounter),typeof(Subject)};
-			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-			System.Xml.Serialization.XmlSerializer writer = 
-				new System.Xml.Serialization.XmlSerializer(typeof(FUCounterDataSet),extraTypes);
-
-			System.IO.StreamWriter file = new System.IO.StreamWriter(doc + "/" + MasterRecord.PatientID + ".FU1");
-			writer.Serialize(file, FU1);
-			file.Close();
 		}
 
 
@@ -464,6 +480,20 @@ namespace FUCounter_App
 				writer.WriteEndDocument();
 			}
 
+		}
+
+		public override void PrepareForSegue (UIStoryboardSegue segue, NSObject sender)
+		{
+			base.PrepareForSegue (segue, sender);
+
+			//(LoadViewController)segue.DestinationViewController
+			// do first a control on the Identifier for your segue
+			//if (segue.Identifier.Equals("your_identifier")) {
+
+
+				//var myData = (CustomerViewController)segue.DestinationViewController;
+				//view.MyData = dataToInject;
+			//}
 		}
 	}
 }
