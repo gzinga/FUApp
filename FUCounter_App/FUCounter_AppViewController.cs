@@ -15,7 +15,7 @@ namespace FUCounter_App
 		public TableSource (string[] items)
 		{
 			tableItems = items;
-			lastSelectedRow = 0;
+			lastSelectedRow = -1;
 		}
 		public override int RowsInSection (UITableView tableview, int section)
 		{
@@ -158,7 +158,7 @@ namespace FUCounter_App
 				return;
 			}
 			ArrayList tableList = new ArrayList ();
-			string a =string.Format("TOTAL # {0}, TX: {1:0.0} , DX: {2:0.0}", MasterRecord.totalHair, MasterRecord.totalTX, MasterRecord.totalDX);
+			string a =string.Format("TOTAL # {0}, TX: {1:0.0} , DX: {2:0.0}", MasterRecord.TotalNumberOfGrafts, MasterRecord.totalTX, MasterRecord.totalDX);
 			int count = 0;
 			tableList.Add(a);
 			foreach (object obj in MasterRecord.AllGroups) 
@@ -166,7 +166,9 @@ namespace FUCounter_App
 				GroupData group = (GroupData)obj;
 				if (group.Active == false)
 					continue;
-				a = string.Format ("Group {0}, total TX: {1:0.0} , DX: {2:0.0}", group.group + 1,
+				a = string.Format ("Group {0}, Total #: {1}, total TX: {2:0.0} , DX: {3:0.0}", 
+					group.group + 1,
+					group._allRecords.Count,
 					(group).totalTX,
 					(group).totalDX);
 				count++;
@@ -372,6 +374,15 @@ namespace FUCounter_App
 
 		partial void SaveRecords (MonoTouch.Foundation.NSObject sender)
 		{
+			if (PatientID.Text == string.Empty || TechID.Text == string.Empty)
+			{
+				UIAlertView alert = new UIAlertView ("Save File", "Patient ID or TechID is empty", null, "OK", null);
+				alert.Show();
+				return;
+			}
+
+
+
 			Type[] extraTypes = {typeof(GroupData),typeof(GraftRecord)};
 			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
 			System.Xml.Serialization.XmlSerializer writer = 
@@ -392,6 +403,11 @@ namespace FUCounter_App
 
 		public void LoadFile(String fileName)
 		{
+			if (fileName == string.Empty) {
+				UIAlertView alert = new UIAlertView ("File Load", "You did not select a file to load", null, "OK", null);
+				alert.Show();
+				return;
+			}
 			UpdateTableView(true);
 			Type[] extraTypes = {typeof(GroupData),typeof(GraftRecord)};
 			System.Xml.Serialization.XmlSerializer reader = 

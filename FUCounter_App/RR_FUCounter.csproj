@@ -127,6 +127,11 @@
   <ItemGroup>
     <BundleResource Include="Resources\.DS_Store" />
     <BundleResource Include="Resources\Icon-76%402x.png" />
+    <BundleResource Include="Resources\Trashcan.jpeg" />
+    <BundleResource Include="Resources\LoadFile.jpeg" />
+    <BundleResource Include="Resources\Open.jpeg" />
+    <BundleResource Include="Resources\Save.jpeg" />
+    <BundleResource Include="Resources\ClearAll.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />

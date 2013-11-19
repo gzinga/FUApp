@@ -18,12 +18,9 @@ namespace FUCounter_App
 
 		}
 
-		public override void ViewDidLoad ()
-		{
-			base.ViewDidLoad ();
 
-			// Perform any additional setup after loading the view, typically from a nib.
-			// loads the table
+		public void ReloadListOfFiles()
+		{
 			ArrayList tableList = new ArrayList ();
 			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
 			var allFIles = Directory.EnumerateFiles (doc);
@@ -38,13 +35,30 @@ namespace FUCounter_App
 			String[] tableItems1 = (String[]) tableList.ToArray( typeof( string ) );
 			TableListFiles.Source = new TableSource (tableItems1);
 			TableListFiles.ReloadData ();
+
+		}
+
+
+		public override void ViewDidLoad ()
+		{
+			base.ViewDidLoad ();
+
+			// Perform any additional setup after loading the view, typically from a nib.
+			// loads the table
+			ReloadListOfFiles ();
 		}
 
 		partial void LoadSelectedRecord (MonoTouch.Foundation.NSObject sender)
 		{
 			TableSource source = (TableSource)TableListFiles.Source;
 			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-			FileToLoad = doc + "/" + (source.GetAllRows())[source.GetLastSelectedRow()];
+			int selectedRow = source.GetLastSelectedRow();
+			if (selectedRow == -1){
+				UIAlertView alert = new UIAlertView ("File Selection", "Please Select a File", null, "OK", null);
+				alert.Show();
+				return;
+			}
+			FileToLoad = doc + "/" + (source.GetAllRows())[selectedRow];
 		}
 
 		public override void PrepareForSegue (UIStoryboardSegue segue, NSObject sender)
@@ -52,6 +66,22 @@ namespace FUCounter_App
 			base.PrepareForSegue (segue, sender);
 
 			((FUCounter_AppViewController)segue.DestinationViewController).SetFileToLoad(FileToLoad);
+		}
+
+		partial void DeleteRecord (MonoTouch.Foundation.NSObject sender)
+		{
+			TableSource source = (TableSource)TableListFiles.Source;
+			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+			int selectedRow = source.GetLastSelectedRow();
+			if (selectedRow == -1){
+				UIAlertView alert = new UIAlertView ("File Selection", "Please Select a File", null, "OK", null);
+				alert.Show();
+				return;
+			}
+			string FileToDelete = doc + "/" + (source.GetAllRows())[selectedRow];
+			// deletes the file
+			File.Delete(FileToDelete);
+			ReloadListOfFiles ();
 		}
 	}
 }

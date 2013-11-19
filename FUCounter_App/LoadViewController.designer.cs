@@ -15,6 +15,9 @@ namespace FUCounter_App
 		[Outlet]
 		MonoTouch.UIKit.UITableView TableListFiles { get; set; }
 
+		[Action ("DeleteRecord:")]
+		partial void DeleteRecord (MonoTouch.Foundation.NSObject sender);
+
 		[Action ("LoadSelectedRecord:")]
 		partial void LoadSelectedRecord (MonoTouch.Foundation.NSObject sender);
 		
