@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Xml;
 using System.IO;
+using MonoTouch.Foundation;
+using MonoTouch.UIKit;
 
 namespace FUCounter_App
 {
@@ -37,6 +39,10 @@ namespace FUCounter_App
 
 		public void AddRecordTop(GraftRecord rec)
 		{
+			if (rec.HairCount == 0 || rec.TerminalHairCount == 0) {
+				new UIAlertView("Improper Entry", "Hair Count and/or Terminal Hair Count cannot be 0", null, "OK", null).Show();
+				return;
+			}
 			_allRecords.Add(rec);
 			// calculates FUs
 			FA [rec.HairCount-1]++;
@@ -89,6 +95,10 @@ namespace FUCounter_App
 	
 		public void AddRecordTop(GraftRecord rec)
 		{
+			if (rec.HairCount == 0 || rec.TerminalHairCount == 0) {
+				new UIAlertView("Improper Entry", "Hair Count and/or Terminal Hair Count cannot be 0", null, "OK", null).Show();
+				return;
+			}
 			((GroupData)AllGroups[rec.GroupNumber-1]).Active = true;
 			//insert the record
 			((GroupData)AllGroups[rec.GroupNumber-1]).AddRecordTop (rec);

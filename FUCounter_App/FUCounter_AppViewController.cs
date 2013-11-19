@@ -297,6 +297,7 @@ namespace FUCounter_App
 				{
 					TxdTerminalHairCount.BackgroundColor = UIColor.Red; 
 					redFlegEntry = true;
+					_workflowCounter++;
 				}
 				else{
 					LabelTxdTerminalHairCount.BackgroundColor = UIColor.Orange;
