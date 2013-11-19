@@ -66,6 +66,7 @@ namespace FUCounter_App
 		public int totalHair{ get; set;}
 		public int totalTXHair{ get; set;}
 		public string PatientID { get; set;}
+		public string TechID { get; set;}
 
 		public CaseCount(){
 		}
@@ -83,6 +84,7 @@ namespace FUCounter_App
 			totalTXHair = 0;
 			for (int i=0;i<12;i++)
 				AllGroups.Add (new GroupData (i));
+			TechID = "";
 		}
 	
 		public void AddRecordTop(GraftRecord rec)

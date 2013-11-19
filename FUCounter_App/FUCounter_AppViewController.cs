@@ -80,13 +80,25 @@ namespace FUCounter_App
 				LoadFile (FileToLoad);
 				return;
 			}
+			ResetView ();
+		}
+
+
+		public void ResetView()
+		{
 			ProcedureDate.Text = DateTime.Today.ToString();
 			MasterRecord = new CaseCount (DateTime.Today, PatientID.Text);
+			PatientID.Text = "";
 			NewRecord ();
 			F1A.Text = F1T.Text = F2A.Text = F2T.Text = F3A.Text = F3T.Text = F3T.Text = F4T.Text = F4A.Text = "0";
 			redFlegEntry = false;
 			firstTime = false;
+			TotalTerminalHairs.Text = "0";
+			TotalTransectedHairs.Text = "0";
+			TechID.Text = "";
+			                        
 		}
+
 
 		public override void ViewWillAppear (bool animated)
 		{
@@ -128,6 +140,10 @@ namespace FUCounter_App
 		public override bool ShouldAutorotateToInterfaceOrientation (UIInterfaceOrientation toInterfaceOrientation)
 		{
 			// Return true for supported orientations
+			if (toInterfaceOrientation == UIInterfaceOrientation.LandscapeLeft ||
+			    toInterfaceOrientation == UIInterfaceOrientation.LandscapeRight ||
+			    toInterfaceOrientation == UIInterfaceOrientation.PortraitUpsideDown)
+				return false;
 			return true;
 		}
 
@@ -197,6 +213,8 @@ namespace FUCounter_App
 				break;
 			}
 
+			TotalTerminalHairs.Text = MasterRecord.totalHair.ToString();
+			TotalTransectedHairs.Text = MasterRecord.totalTXHair.ToString();
 		}
 
 
@@ -375,7 +393,6 @@ namespace FUCounter_App
 		{
 			UpdateTableView(true);
 			Type[] extraTypes = {typeof(GroupData),typeof(GraftRecord)};
-			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
 			System.Xml.Serialization.XmlSerializer reader = 
 				new System.Xml.Serialization.XmlSerializer(typeof(CaseCount),extraTypes);
 
@@ -384,6 +401,27 @@ namespace FUCounter_App
 			file.Close();
 			UpdateTableView(false);
 			NewRecord();
+
+			// update UI
+			PatientID.Text = MasterRecord.PatientID;
+			ProcedureDate.Text = MasterRecord.Date.ToString();
+			TechID.Text = MasterRecord.TechID;
+			//TextBoxProtocol.Text = MasterRecord.
+
+			//Update FSCount
+
+			F1T.Text = Convert.ToString(MasterRecord.TFT[0]);
+			F2T.Text = Convert.ToString(MasterRecord.TFT[1]);
+			F3T.Text = Convert.ToString(MasterRecord.TFT[2]);
+			F4T.Text = Convert.ToString(MasterRecord.TFT[3]);
+
+			F1A.Text = Convert.ToString(MasterRecord.TFA[0]);
+			F2A.Text = Convert.ToString(MasterRecord.TFA[1]);
+			F3A.Text = Convert.ToString(MasterRecord.TFA[2]);
+			F4A.Text = Convert.ToString(MasterRecord.TFA[3]);
+
+			TotalTerminalHairs.Text = MasterRecord.totalHair.ToString();
+			TotalTransectedHairs.Text = MasterRecord.totalTXHair.ToString();
 		}
 
 
@@ -408,7 +446,7 @@ namespace FUCounter_App
 		{
 			MasterRecord = new CaseCount();
 			UpdateTableView(true);
-			ViewDidLoad();
+			ResetView ();
 		}
 		partial void PatientIDEditEnd (MonoTouch.Foundation.NSObject sender)
 		{
@@ -502,6 +540,12 @@ namespace FUCounter_App
 				//var myData = (CustomerViewController)segue.DestinationViewController;
 				//view.MyData = dataToInject;
 			//}
+		}
+
+		partial void TechIDDidEnd (MonoTouch.Foundation.NSObject sender)
+		{
+			MasterRecord.TechID = TechID.Text;
+
 		}
 	}
 }

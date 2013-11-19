@@ -103,10 +103,19 @@ namespace FUCounter_App
 		MonoTouch.UIKit.UITableView ResultsView { get; set; }
 
 		[Outlet]
+		MonoTouch.UIKit.UITextField TechID { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UITextField TerminalHairCountBox { get; set; }
 
 		[Outlet]
 		MonoTouch.UIKit.UITextField TextBoxProtocol { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UITextField TotalTerminalHairs { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UITextField TotalTransectedHairs { get; set; }
 
 		[Outlet]
 		MonoTouch.UIKit.UITextField TxdHairCountBox { get; set; }
@@ -152,17 +161,20 @@ namespace FUCounter_App
 
 		[Action ("SaveRecords:")]
 		partial void SaveRecords (MonoTouch.Foundation.NSObject sender);
+
+		[Action ("TechIDDidEnd:")]
+		partial void TechIDDidEnd (MonoTouch.Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (TechID != null) {
+				TechID.Dispose ();
+				TechID = null;
+			}
+
 			if (ButtonLoad != null) {
 				ButtonLoad.Dispose ();
 				ButtonLoad = null;
-			}
-
-			if (TextBoxProtocol != null) {
-				TextBoxProtocol.Dispose ();
-				TextBoxProtocol = null;
 			}
 
 			if (ButtonSave != null) {
@@ -313,6 +325,21 @@ namespace FUCounter_App
 			if (TerminalHairCountBox != null) {
 				TerminalHairCountBox.Dispose ();
 				TerminalHairCountBox = null;
+			}
+
+			if (TextBoxProtocol != null) {
+				TextBoxProtocol.Dispose ();
+				TextBoxProtocol = null;
+			}
+
+			if (TotalTerminalHairs != null) {
+				TotalTerminalHairs.Dispose ();
+				TotalTerminalHairs = null;
+			}
+
+			if (TotalTransectedHairs != null) {
+				TotalTransectedHairs.Dispose ();
+				TotalTransectedHairs = null;
 			}
 
 			if (TxdHairCountBox != null) {

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C4AEB328-781B-4638-B8AD-FB7F8BB39117</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RR_FUCounter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>16D7D98E-8DBF-446B-910D-0B5770EBF8D1</key>
+		<string>https://github.com/gzinga/FUApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FUCounter_App/obj/Xcode/6/RR_FUCounter.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>16D7D98E-8DBF-446B-910D-0B5770EBF8D1</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gzinga/FUApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>16D7D98E-8DBF-446B-910D-0B5770EBF8D1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>16D7D98E-8DBF-446B-910D-0B5770EBF8D1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FUApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
