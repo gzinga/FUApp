@@ -118,6 +118,10 @@
     <Compile Include="LoadViewController.designer.cs">
       <DependentUpon>LoadViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="EULAViewController.cs" />
+    <Compile Include="EULAViewController.designer.cs">
+      <DependentUpon>EULAViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
