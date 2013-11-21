@@ -50,6 +50,7 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIButton *ButtonLoad;
+- (IBAction)EmailFile:(id)sender;
 
 @property (nonatomic, retain) IBOutlet UIButton *ButtonSave;
 

@@ -147,6 +147,9 @@ namespace FUCounter_App
 		[Action ("ClearAll:")]
 		partial void ClearAll (MonoTouch.Foundation.NSObject sender);
 
+		[Action ("EmailFile:")]
+		partial void EmailFile (MonoTouch.Foundation.NSObject sender);
+
 		[Action ("KeyEnterTouch:")]
 		partial void KeyEnterTouch (MonoTouch.Foundation.NSObject sender);
 
@@ -167,11 +170,6 @@ namespace FUCounter_App
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (TechID != null) {
-				TechID.Dispose ();
-				TechID = null;
-			}
-
 			if (ButtonLoad != null) {
 				ButtonLoad.Dispose ();
 				ButtonLoad = null;
@@ -320,6 +318,11 @@ namespace FUCounter_App
 			if (ResultsView != null) {
 				ResultsView.Dispose ();
 				ResultsView = null;
+			}
+
+			if (TechID != null) {
+				TechID.Dispose ();
+				TechID = null;
 			}
 
 			if (TerminalHairCountBox != null) {

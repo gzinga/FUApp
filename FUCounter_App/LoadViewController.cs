@@ -59,6 +59,7 @@ namespace FUCounter_App
 				return;
 			}
 			FileToLoad = doc + "/" + (source.GetAllRows())[selectedRow];
+			//this.DismissViewController(true,null);
 		}
 
 		public override void PrepareForSegue (UIStoryboardSegue segue, NSObject sender)

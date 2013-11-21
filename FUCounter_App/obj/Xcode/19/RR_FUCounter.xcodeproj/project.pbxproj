@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E8E66640000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F730200000000000000000 /* UIKit.framework */; };
+		202409970000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B516350000000000000000 /* MapKit.framework */; };
+		3557722F0000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E87ECD0000000000000000 /* Foundation.framework */; };
+		6F9CE2900000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8ADAC700000000000000000 /* CoreGraphics.framework */; };
+		221968C30000000000000000 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25AA75610000000000000000 /* MainStoryboard.storyboard */; };
+		374CD15B0000000000000000 /* .DS_Store in Resources */ = {isa = PBXBuildFile; fileRef = 3ADDDDF90000000000000000 /* .DS_Store */; };
+		257792450000000000000000 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29089EE30000000000000000 /* Icon-76@2x.png */; };
+		13A2532F0000000000000000 /* Trashcan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 17335FCD0000000000000000 /* Trashcan.jpeg */; };
+		2C66C8650000000000000000 /* LoadFile.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7D5030000000000000000 /* LoadFile.jpeg */; };
+		3355FE850000000000000000 /* Open.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 36E70B230000000000000000 /* Open.jpeg */; };
+		2180BF6F0000000000000000 /* Save.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2511CC0D0000000000000000 /* Save.jpeg */; };
+		FAB805900000000000000000 /* ClearAll.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 133C8CF70000000000000000 /* ClearAll.jpeg */; };
+		3DD641430000000000000000 /* ResRob_Logo_Full_ColorTrans.png in Resources */ = {isa = PBXBuildFile; fileRef = 1674DE100000000000000000 /* ResRob_Logo_Full_ColorTrans.png */; };
+		856840100000000000000000 /* ResRob_Logo_Symbol_ColorTrans.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7909F00000000000000000 /* ResRob_Logo_Symbol_ColorTrans.png */; };
+		368144EB0000000000000000 /* Home.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3A1251890000000000000000 /* Home.jpeg */; };
+		24AC05D50000000000000000 /* email.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 283D12730000000000000000 /* email.jpeg */; };
+		9D2B5A600000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = D63C24400000000000000000 /* AppDelegate.h */; };
+		7BDDAAD00000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EE74B00000000000000000 /* AppDelegate.m */; };
+		3EB9C9940000000000000000 /* FUCounter_AppViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 24AD63200000000000000000 /* FUCounter_AppViewController.h */; };
+		3224ABDD0000000000000000 /* FUCounter_AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5B87B0000000000000000 /* FUCounter_AppViewController.m */; };
+		33D3C09E0000000000000000 /* LoadViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 3764CD3C0000000000000000 /* LoadViewController.h */; };
+		201C89AB0000000000000000 /* LoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AD96490000000000000000 /* LoadViewController.m */; };
+		21CB9E6C0000000000000000 /* EULAViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 255CAB0A0000000000000000 /* EULAViewController.h */; };
+		38AE1BC50000000000000000 /* EULAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F28630000000000000000 /* EULAViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27610A0E0000000000000000 /* RR_FUCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "RR_FUCounter.app"; path = "RR_FUCounter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F730200000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		23B516350000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		38E87ECD0000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		A8ADAC700000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		25AA75610000000000000000 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "MainStoryboard.storyboard"; path = "MainStoryboard.storyboard"; sourceTree = "<group>"; };
+		3ADDDDF90000000000000000 /* .DS_Store */ = {isa = PBXFileReference; name = ".DS_Store"; path = ".DS_Store"; sourceTree = "<group>"; };
+		29089EE30000000000000000 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76@2x.png"; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		17335FCD0000000000000000 /* Trashcan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Trashcan.jpeg"; path = "Trashcan.jpeg"; sourceTree = "<group>"; };
+		2FF7D5030000000000000000 /* LoadFile.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "LoadFile.jpeg"; path = "LoadFile.jpeg"; sourceTree = "<group>"; };
+		36E70B230000000000000000 /* Open.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Open.jpeg"; path = "Open.jpeg"; sourceTree = "<group>"; };
+		2511CC0D0000000000000000 /* Save.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Save.jpeg"; path = "Save.jpeg"; sourceTree = "<group>"; };
+		133C8CF70000000000000000 /* ClearAll.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ClearAll.jpeg"; path = "ClearAll.jpeg"; sourceTree = "<group>"; };
+		1674DE100000000000000000 /* ResRob_Logo_Full_ColorTrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ResRob_Logo_Full_ColorTrans.png"; path = "ResRob_Logo_Full_ColorTrans.png"; sourceTree = "<group>"; };
+		BE7909F00000000000000000 /* ResRob_Logo_Symbol_ColorTrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ResRob_Logo_Symbol_ColorTrans.png"; path = "ResRob_Logo_Symbol_ColorTrans.png"; sourceTree = "<group>"; };
+		3A1251890000000000000000 /* Home.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Home.jpeg"; path = "Home.jpeg"; sourceTree = "<group>"; };
+		283D12730000000000000000 /* email.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "email.jpeg"; path = "email.jpeg"; sourceTree = "<group>"; };
+		D63C24400000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		B4EE74B00000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+		24AD63200000000000000000 /* FUCounter_AppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FUCounter_AppViewController.h"; path = "FUCounter_AppViewController.h"; sourceTree = "<group>"; };
+		35B5B87B0000000000000000 /* FUCounter_AppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "FUCounter_AppViewController.m"; path = "FUCounter_AppViewController.m"; sourceTree = "<group>"; };
+		3764CD3C0000000000000000 /* LoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LoadViewController.h"; path = "LoadViewController.h"; sourceTree = "<group>"; };
+		23AD96490000000000000000 /* LoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "LoadViewController.m"; path = "LoadViewController.m"; sourceTree = "<group>"; };
+		255CAB0A0000000000000000 /* EULAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EULAViewController.h"; path = "EULAViewController.h"; sourceTree = "<group>"; };
+		3C3F28630000000000000000 /* EULAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "EULAViewController.m"; path = "EULAViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17A0A5F10000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E8E66640000000000000000 /* UIKit.framework in Frameworks */,
+				202409970000000000000000 /* MapKit.framework in Frameworks */,
+				3557722F0000000000000000 /* Foundation.framework in Frameworks */,
+				6F9CE2900000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37BA177F0000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				2253CBCB0000000000000000 /* RR_FUCounter */,
+				26D3D5900000000000000000 /* Frameworks */,
+				2D06F1A50000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D06F1A50000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27610A0E0000000000000000 /* RR_FUCounter.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		26D3D5900000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21F730200000000000000000 /* UIKit.framework */,
+				23B516350000000000000000 /* MapKit.framework */,
+				38E87ECD0000000000000000 /* Foundation.framework */,
+				A8ADAC700000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		2253CBCB0000000000000000 /* RR_FUCounter */ = {
+			isa = PBXGroup;
+			children = (
+				3ADDDDF90000000000000000 /* .DS_Store */,
+				D63C24400000000000000000 /* AppDelegate.h */,
+				133C8CF70000000000000000 /* ClearAll.jpeg */,
+				283D12730000000000000000 /* email.jpeg */,
+				255CAB0A0000000000000000 /* EULAViewController.h */,
+				24AD63200000000000000000 /* FUCounter_AppViewController.h */,
+				3A1251890000000000000000 /* Home.jpeg */,
+				29089EE30000000000000000 /* Icon-76@2x.png */,
+				2FF7D5030000000000000000 /* LoadFile.jpeg */,
+				3764CD3C0000000000000000 /* LoadViewController.h */,
+				25AA75610000000000000000 /* MainStoryboard.storyboard */,
+				36E70B230000000000000000 /* Open.jpeg */,
+				1674DE100000000000000000 /* ResRob_Logo_Full_ColorTrans.png */,
+				BE7909F00000000000000000 /* ResRob_Logo_Symbol_ColorTrans.png */,
+				2511CC0D0000000000000000 /* Save.jpeg */,
+				17335FCD0000000000000000 /* Trashcan.jpeg */,
+				99FD28A00000000000000000 /* Supporting Files */,
+			);
+			name = "RR_FUCounter";
+			sourceTree = "<group>";
+		};
+		99FD28A00000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4EE74B00000000000000000 /* AppDelegate.m */,
+				3C3F28630000000000000000 /* EULAViewController.m */,
+				35B5B87B0000000000000000 /* FUCounter_AppViewController.m */,
+				23AD96490000000000000000 /* LoadViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FA6477E0000000000000000 /* RR_FUCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CADE4340000000000000000 /* Build configuration list for PBXNativeTarget "RR_FUCounter" */;
+			buildPhases = (
+				5CB66DB00000000000000000 /* Sources */,
+				17A0A5F10000000000000000 /* Frameworks */,
+				2EB606660000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RR_FUCounter";
+			productName = "RR_FUCounter";
+			productReference = 27610A0E0000000000000000 /* RR_FUCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14F321A40000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 11FABE5A0000000000000000 /* Build configuration list for PBXProject "RR_FUCounter" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 37BA177F0000000000000000;
+			productRefGroup = 2D06F1A50000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FA6477E0000000000000000 /* RR_FUCounter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EB606660000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221968C30000000000000000 /* MainStoryboard.storyboard in Resources */,
+				374CD15B0000000000000000 /* .DS_Store in Resources */,
+				257792450000000000000000 /* Icon-76@2x.png in Resources */,
+				13A2532F0000000000000000 /* Trashcan.jpeg in Resources */,
+				2C66C8650000000000000000 /* LoadFile.jpeg in Resources */,
+				3355FE850000000000000000 /* Open.jpeg in Resources */,
+				2180BF6F0000000000000000 /* Save.jpeg in Resources */,
+				FAB805900000000000000000 /* ClearAll.jpeg in Resources */,
+				3DD641430000000000000000 /* ResRob_Logo_Full_ColorTrans.png in Resources */,
+				856840100000000000000000 /* ResRob_Logo_Symbol_ColorTrans.png in Resources */,
+				368144EB0000000000000000 /* Home.jpeg in Resources */,
+				24AC05D50000000000000000 /* email.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CB66DB00000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D2B5A600000000000000000 /* AppDelegate.h in Sources */,
+				7BDDAAD00000000000000000 /* AppDelegate.m in Sources */,
+				3EB9C9940000000000000000 /* FUCounter_AppViewController.h in Sources */,
+				3224ABDD0000000000000000 /* FUCounter_AppViewController.m in Sources */,
+				33D3C09E0000000000000000 /* LoadViewController.h in Sources */,
+				201C89AB0000000000000000 /* LoadViewController.m in Sources */,
+				21CB9E6C0000000000000000 /* EULAViewController.h in Sources */,
+				38AE1BC50000000000000000 /* EULAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1376EFFF0000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+		747988000000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "RR_FUCounter";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11FABE5A0000000000000000 /* Build configuration list for PBXProject "RR_FUCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1376EFFF0000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		1CADE4340000000000000000 /* Build configuration list for PBXNativeTarget "RR_FUCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747988000000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14F321A40000000000000000 /* Project object */;
+}

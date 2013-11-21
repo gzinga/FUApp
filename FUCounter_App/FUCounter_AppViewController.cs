@@ -5,6 +5,7 @@ using MonoTouch.UIKit;
 using System.Collections;
 using System.Xml;
 using System.IO;
+using MonoTouch.MessageUI;
 
 namespace FUCounter_App
 {
@@ -567,6 +568,26 @@ namespace FUCounter_App
 		{
 			MasterRecord.TechID = TechID.Text;
 
+		}
+
+		partial void EmailFile (MonoTouch.Foundation.NSObject sender)
+		{
+			MFMailComposeViewController _mailController;
+			_mailController = new MFMailComposeViewController ();
+			_mailController.SetToRecipients (new string[]{""});
+			_mailController.SetSubject ("FU File");
+			_mailController.SetMessageBody ("FU File", false);
+
+			_mailController.Finished += ( object s, MFComposeResultEventArgs args) => {
+				Console.WriteLine (args.Result.ToString ());
+				args.Controller.DismissViewController (true, null);
+			};
+			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+			string fileName = doc + "/" + MasterRecord.PatientID + ".FU1";
+
+			NSData data = NSData.FromFile (fileName);
+			_mailController.AddAttachmentData(data,"text/plain",MasterRecord.PatientID + ".FU1");
+			this.PresentViewController (_mailController, true, null);
 		}
 	}
 }

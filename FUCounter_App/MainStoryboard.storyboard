@@ -524,9 +524,7 @@
                                 </state>
                                 <connections>
                                     <action selector="LoadRecords:" destination="2" eventType="touchUpInside" id="MaN-FS-5Mb"/>
-                                    <segue destination="Odq-zl-F83" kind="popover" popoverAnchorView="AK9-ma-1Vf" id="VDS-g4-PoI">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="Odq-zl-F83" kind="modal" modalPresentationStyle="pageSheet" modalTransitionStyle="crossDissolve" id="VDS-g4-PoI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LV4-fs-Aj2">
@@ -594,6 +592,16 @@
                                     <segue destination="M5Z-xv-9RE" kind="popover" popoverAnchorView="5YG-0Z-n9q" id="eIN-HZ-npi">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mj8-Ud-hBy">
+                                <rect key="frame" x="631" y="211" width="60" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Email" image="email.jpeg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="EmailFile:" destination="2" eventType="touchUpInside" id="gTz-QI-7a5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -748,7 +756,7 @@
                                 </state>
                                 <connections>
                                     <action selector="LoadSelectedRecord:" destination="Odq-zl-F83" eventType="touchUpInside" id="2LN-yZ-1dq"/>
-                                    <segue destination="2" kind="modal" id="KdP-dY-sK9"/>
+                                    <segue destination="2" kind="modal" id="IDe-jJ-VkF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="i65-jn-ku7">
@@ -764,12 +772,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="72" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qco-Tl-ci0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qco-Tl-ci0">
                                 <rect key="frame" x="589" y="350" width="90" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Home.jpeg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2" kind="modal" id="bEV-cl-lzs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -792,6 +803,7 @@
         <image name="ResRob_Logo_Symbol_ColorTrans.png" width="257" height="263"/>
         <image name="Save.jpeg" width="204" height="204"/>
         <image name="Trashcan.jpeg" width="182" height="146"/>
+        <image name="email.jpeg" width="236" height="213"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -799,6 +811,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="YTU-ge-B88"/>
+        <segue reference="bEV-cl-lzs"/>
     </inferredMetricsTieBreakers>
 </document>
