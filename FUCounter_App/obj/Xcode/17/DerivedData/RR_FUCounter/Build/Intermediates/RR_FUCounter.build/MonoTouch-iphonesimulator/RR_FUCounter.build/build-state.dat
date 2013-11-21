@@ -1,0 +1,288 @@
+TRR_FUCounter
+v6
+r1
+cCheck dependencies
+cCompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/AppDelegate-7CF4E5B7614E93BD.o /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/FUCounter_AppViewController-8C00826F0CF73C0A.o /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/FUCounter_AppViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/LoadViewController-A7DEAF5D7BAFBFE8.o /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/LoadViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/EULAViewController-46A9D727DD7979DD.o /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/EULAViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/RR_FUCounter normal i386
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
+c0000000052812F130000000000000176
+t1384197907
+s374
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
+c000000005274760A00000000000003B5
+t1383364106
+s949
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c000000005274761000000000000001A0
+t1383364112
+s416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000527476120000000000445870
+t1383364114
+s4479088
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000052747614000000000088C680
+t1383364116
+s8963712
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c000000005274761400000000002C78D0
+t1383364116
+s2914512
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000527476180000000001DB9910
+t1383364120
+s31168784
+
+N/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/AppDelegate.m
+c0000000052813E7A0000000000000144
+t1384201850
+s324
+
+N/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/AppDelegate-7CF4E5B7614E93BD.o
+t1384986003
+s3288
+
+N/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/EULAViewController-46A9D727DD7979DD.o
+t1384986003
+s40340
+
+N/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/FUCounter_AppViewController-8C00826F0CF73C0A.o
+t1384986003
+s101004
+
+N/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/LoadViewController-A7DEAF5D7BAFBFE8.o
+t1384986003
+s42104
+
+N/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/RR_FUCounter.LinkFileList
+c00000000528D359300000000000003E2
+t1384986003
+s994
+
+N/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/RR_FUCounter
+t2
+s0
+
+N/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/EULAViewController.m
+c00000000528D319D00000000000001A5
+t1384984989
+s421
+
+N/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/FUCounter_AppViewController.m
+c00000000528BD889000000000000090C
+t1384896649
+s2316
+
+N/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/LoadViewController.m
+c00000000528BA29E00000000000001D9
+t1384882846
+s473
+
+CBuild AST from /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/AppDelegate.m
+r0
+
+CBuild AST from /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/EULAViewController.m
+r0
+
+CBuild AST from /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/FUCounter_AppViewController.m
+r0
+
+CBuild AST from /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/LoadViewController.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies2c6240136d3db841^087747136d3db841^-730"warning: no rule to process file '/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/AppDelegate.h' of type sourcecode.c.h for architecture i386warning: no rule to process file '/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/FUCounter_AppViewController.h' of type sourcecode.c.h for architecture i386warning: no rule to process file '/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/LoadViewController.h' of type sourcecode.c.h for architecture i386warning: no rule to process file '/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/EULAViewController.h' of type sourcecode.c.h for architecture i3864(21%IDEActivityLogMessage2@174"Warning: no rule to process file '/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/AppDelegate.h' of type sourcecode.c.h for architecture i386-406678803#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@190"Warning: no rule to process file '/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/FUCounter_AppViewController.h' of type sourcecode.c.h for architecture i386-406678803#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@181"Warning: no rule to process file '/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/LoadViewController.h' of type sourcecode.c.h for architecture i386-406678803#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@181"Warning: no rule to process file '/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/EULAViewController.h' of type sourcecode.c.h for architecture i386-406678803#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#1#--18"Check dependencies36"DE2C292A-1F1B-410C-90A2-CFB7D167E3B2-
+
+CCompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/AppDelegate-7CF4E5B7614E93BD.o /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s406678803.288716
+e406678803.765683
+r1
+xCompileC
+xDerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/AppDelegate-7CF4E5B7614E93BD.o
+x/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/AppDelegate.m
+d/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/AppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/AppDelegate.m250"CompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/AppDelegate-7CF4E5B7614E93BD.o AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7d774b136d3db841^ff03c4136d3db841^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/AppDelegate.m0000000000000000^4411"CompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/AppDelegate-7CF4E5B7614E93BD.o AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xamarin Studio.app/Contents/MacOS:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-generated-files.hmap -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-own-target-headers.hmap -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-all-target-headers.hmap -iquote /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-project-headers.hmap -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/DerivedSources/i386 -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/DerivedSources -F/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator -MMD -MT dependencies -MF /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/AppDelegate-7CF4E5B7614E93BD.d --serialize-diagnostics /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/AppDelegate-7CF4E5B7614E93BD.dia -c /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/AppDelegate.m -o /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/AppDelegate-7CF4E5B7614E93BD.o36"06038394-6B96-44BB-B42F-9990DBA7AAD1-
+b172EB8C2-C21F-4EA2-BCD3-2178E19208EB
+
+CCompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/EULAViewController-46A9D727DD7979DD.o /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/EULAViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s406678803.290185
+e406678803.780959
+r1
+xCompileC
+xDerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/EULAViewController-46A9D727DD7979DD.o
+x/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/EULAViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/EULAViewController.m
+d/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/EULAViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compile /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/EULAViewController.m264"CompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/EULAViewController-46A9D727DD7979DD.o EULAViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler18774b136d3db841^28f3c7136d3db841^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/EULAViewController.m0000000000000000^4453"CompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/EULAViewController-46A9D727DD7979DD.o EULAViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xamarin Studio.app/Contents/MacOS:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-generated-files.hmap -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-own-target-headers.hmap -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-all-target-headers.hmap -iquote /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-project-headers.hmap -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/DerivedSources/i386 -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/DerivedSources -F/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator -MMD -MT dependencies -MF /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/EULAViewController-46A9D727DD7979DD.d --serialize-diagnostics /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/EULAViewController-46A9D727DD7979DD.dia -c /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/EULAViewController.m -o /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/EULAViewController-46A9D727DD7979DD.o36"466F0445-DC37-4042-8AD0-2B1B58F54138-
+b172EB8C2-C21F-4EA2-BCD3-2178E19208EB
+
+CCompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/FUCounter_AppViewController-8C00826F0CF73C0A.o /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/FUCounter_AppViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s406678803.289076
+e406678803.806712
+r1
+xCompileC
+xDerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/FUCounter_AppViewController-8C00826F0CF73C0A.o
+x/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/FUCounter_AppViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/FUCounter_AppViewController.m
+d/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/FUCounter_AppViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Compile /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/FUCounter_AppViewController.m282"CompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/FUCounter_AppViewController-8C00826F0CF73C0A.o FUCounter_AppViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler3a774b136d3db841^9885ce136d3db841^---0#0#1#-19%DVTDocumentLocation2@117"file:///Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/FUCounter_AppViewController.m0000000000000000^4507"CompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/FUCounter_AppViewController-8C00826F0CF73C0A.o FUCounter_AppViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xamarin Studio.app/Contents/MacOS:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-generated-files.hmap -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-own-target-headers.hmap -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-all-target-headers.hmap -iquote /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-project-headers.hmap -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/DerivedSources/i386 -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/DerivedSources -F/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator -MMD -MT dependencies -MF /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/FUCounter_AppViewController-8C00826F0CF73C0A.d --serialize-diagnostics /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/FUCounter_AppViewController-8C00826F0CF73C0A.dia -c /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/FUCounter_AppViewController.m -o /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/FUCounter_AppViewController-8C00826F0CF73C0A.o36"59793184-151F-4682-B021-636EF62350C8-
+b172EB8C2-C21F-4EA2-BCD3-2178E19208EB
+
+CCompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/LoadViewController-A7DEAF5D7BAFBFE8.o /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/LoadViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s406678803.289417
+e406678803.785907
+r1
+xCompileC
+xDerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/LoadViewController-A7DEAF5D7BAFBFE8.o
+x/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/LoadViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/LoadViewController.m
+d/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/LoadViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compile /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/LoadViewController.m264"CompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/LoadViewController-A7DEAF5D7BAFBFE8.o LoadViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler74794b136d3db841^6132c9136d3db841^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/LoadViewController.m0000000000000000^4453"CompileC DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/LoadViewController-A7DEAF5D7BAFBFE8.o LoadViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xamarin Studio.app/Contents/MacOS:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-generated-files.hmap -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-own-target-headers.hmap -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-all-target-headers.hmap -iquote /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/RR_FUCounter-project-headers.hmap -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/DerivedSources/i386 -I/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/DerivedSources -F/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator -MMD -MT dependencies -MF /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/LoadViewController-A7DEAF5D7BAFBFE8.d --serialize-diagnostics /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/LoadViewController-A7DEAF5D7BAFBFE8.dia -c /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/LoadViewController.m -o /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/LoadViewController-A7DEAF5D7BAFBFE8.o36"C1D5E11A-C5DC-4550-B27E-EC613E25A309-
+b172EB8C2-C21F-4EA2-BCD3-2178E19208EB
+
+CCompileStoryboard /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/MainStoryboard.storyboard
+r0
+
+CCpResource .DS_Store DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/.DS_Store
+r0
+
+CCpResource ClearAll.jpeg DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/ClearAll.jpeg
+r0
+
+CCpResource Home.jpeg DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/Home.jpeg
+r0
+
+CCpResource Icon-76@2x.png DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/Icon-76@2x.png
+r0
+
+CCpResource LoadFile.jpeg DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/LoadFile.jpeg
+r0
+
+CCpResource Open.jpeg DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/Open.jpeg
+r0
+
+CCpResource ResRob_Logo_Full_ColorTrans.png DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/ResRob_Logo_Full_ColorTrans.png
+r0
+
+CCpResource ResRob_Logo_Symbol_ColorTrans.png DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/ResRob_Logo_Symbol_ColorTrans.png
+r0
+
+CCpResource Save.jpeg DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/Save.jpeg
+r0
+
+CCpResource Trashcan.jpeg DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/Trashcan.jpeg
+r0
+
+CGenerateDSYMFile /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app.dSYM /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/RR_FUCounter
+r0
+
+CLd /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/RR_FUCounter normal i386
+s406678803.807619
+e406678803.918624
+r0
+xLd
+x/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/RR_FUCounter
+xnormal
+xi386
+d/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/RR_FUCounter.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/crt1.o
+d/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/AppDelegate-7CF4E5B7614E93BD.o
+d/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/FUCounter_AppViewController-8C00826F0CF73C0A.o
+d/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/LoadViewController-A7DEAF5D7BAFBFE8.o
+d/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/EULAViewController-46A9D727DD7979DD.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcopyfile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdyld_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libmacho_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libnotify_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libremovefile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libunwind_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
+d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/usr/lib/system/libcache.dylib
+d/usr/lib/system/libcommonCrypto.dylib
+d/usr/lib/system/libcompiler_rt.dylib
+d/usr/lib/system/libcopyfile.dylib
+d/usr/lib/system/libcorecrypto.dylib
+d/usr/lib/system/libdyld.dylib
+d/usr/lib/system/libkeymgr.dylib
+d/usr/lib/system/liblaunch.dylib
+d/usr/lib/system/libmacho.dylib
+d/usr/lib/system/libquarantine.dylib
+d/usr/lib/system/libremovefile.dylib
+d/usr/lib/system/libsystem_asl.dylib
+d/usr/lib/system/libsystem_blocks.dylib
+d/usr/lib/system/libsystem_c.dylib
+d/usr/lib/system/libsystem_configuration.dylib
+d/usr/lib/system/libsystem_dnssd.dylib
+d/usr/lib/system/libsystem_info.dylib
+d/usr/lib/system/libsystem_kernel.dylib
+d/usr/lib/system/libsystem_m.dylib
+d/usr/lib/system/libsystem_malloc.dylib
+d/usr/lib/system/libsystem_notify.dylib
+d/usr/lib/system/libsystem_platform.dylib
+d/usr/lib/system/libsystem_pthread.dylib
+d/usr/lib/system/libsystem_sandbox.dylib
+d/usr/lib/system/libunc.dylib
+d/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
+oUndefined symbols for architecture i386:
+o  "_main", referenced from:
+o      start in crt1.o
+old: symbol(s) not found for architecture i386
+oclang: error: linker command failed with exit code 1 (use -v to see invocation)
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection181"Link /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/RR_FUCounter110"Ld DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/RR_FUCounter normal i386a7cfce136d3db841^d638eb136d3db841^-217"Undefined symbols for architecture i386:  "_main", referenced from:      start in crt1.old: symbol(s) not found for architecture i386clang: error: linker command failed with exit code 1 (use -v to see invocation)4(21%IDEActivityLogMessage2@25""_main", referenced from:-406678803#41#28#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--2@15"Start in crt1.o-406678803#69#22#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@41"Symbol(s) not found for architecture i386-406678803#91#46#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-406678803#137#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--0#0#1#--1920"Ld DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/RR_FUCounter normal i386    cd /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xamarin Studio.app/Contents/MacOS:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator -F/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator -filelist /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/RR_FUCounter.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework UIKit -framework MapKit -framework Foundation -framework CoreGraphics -Xlinker -dependency_info -Xlinker /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Intermediates/RR_FUCounter.build/MonoTouch-iphonesimulator/RR_FUCounter.build/Objects-normal/i386/RR_FUCounter_dependency_info.dat -o /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app/RR_FUCounter36"F83DC7B6-1A5E-4137-AB2D-B787A3A85BD3-
+b172EB8C2-C21F-4EA2-BCD3-2178E19208EB
+
+CTouch /Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/Xcode/17/DerivedData/RR_FUCounter/Build/Products/MonoTouch-iphonesimulator/RR_FUCounter.app
+r0
+

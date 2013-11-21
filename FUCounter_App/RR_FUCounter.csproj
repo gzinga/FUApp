@@ -136,6 +136,9 @@
     <BundleResource Include="Resources\Open.jpeg" />
     <BundleResource Include="Resources\Save.jpeg" />
     <BundleResource Include="Resources\ClearAll.jpeg" />
+    <BundleResource Include="Resources\ResRob_Logo_Full_ColorTrans.png" />
+    <BundleResource Include="Resources\ResRob_Logo_Symbol_ColorTrans.png" />
+    <BundleResource Include="Resources\Home.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />

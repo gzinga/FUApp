@@ -61,6 +61,10 @@ namespace FUCounter_App
 		{
 		}
 
+		public FUCounter_AppViewController():base()
+		{
+
+		}
 		public override void DidReceiveMemoryWarning ()
 		{
 			// Releases the view if it doesn't have a superview.

@@ -23,31 +23,37 @@ namespace FUCounter_App
 		{
 		}
 
+		public FUCounter_AppViewController mainView;
+
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			EULA eula = new	EULA ();
-			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-			string fileName = doc + "/RR_EULA.txt";
+			//EULA eula = new	EULA ();
+			//var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+			//string fileName = doc + "/RR_EULA.txt";
 
-			System.Xml.Serialization.XmlSerializer reader = 
-				new System.Xml.Serialization.XmlSerializer(typeof(EULA));
-			System.IO.StreamReader file;
+			//System.Xml.Serialization.XmlSerializer reader = 
+			//	new System.Xml.Serialization.XmlSerializer(typeof(EULA));
+			//System.IO.StreamReader file = null;
 
-			//	try{
-
-			//file = new System.IO.StreamReader(fileName);
+			//try{
+			//	file = new System.IO.StreamReader(fileName);
 			//}
-			//catch(System.IO.IOException e)
+			//catch(Exception e)
 			//{
-				//	if (e ==  System.IO.FileNotFoundException)
-			//	return;
+				//if (e.GetType() ==  System.IO.FileNotFoundException)
+				return;
 			//}
 			//eula = (EULA)reader.Deserialize(file);
 			//file.Close();
 			//if (eula.Agreed == true) {
-			//	// we can skip the EULA
-			//	AgreeAction (null);
+				// we can skip the EULA and go to the main view
+				//mainView = this.Storyboard.InstantiateViewController (typeof(FUCounter_AppViewController).Name) as FUCounter_AppViewController;
+				//PresentViewController(mainView, false, null); 
+			//	mainView = new FUCounter_AppViewController ();
+			//	PresentViewController(mainView, false, null); 
+				//View = mainView.View;
+				//UIView.Transition ((UIViewController)this, mainView, 1.0, UIViewAnimationCurve.EaseIn, null);
 			//}
 		}
 
@@ -59,19 +65,19 @@ namespace FUCounter_App
 
 		partial void AgreeAction (MonoTouch.Foundation.NSObject sender)
 		{
-			EULA eula = new EULA();
-			eula.Agreed = true;
-			eula.TimeStamp = DateTime.Today;
+			//EULA eula = new EULA();
+			//eula.Agreed = true;
+			//eula.TimeStamp = DateTime.Today;
 			// saves a file with the info
-			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-			string fileName = doc + "/RR_EULA.txt";
+			//var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+			//string fileName = doc + "/RR_EULA.txt";
 
-			System.Xml.Serialization.XmlSerializer writer = 
-				new System.Xml.Serialization.XmlSerializer(typeof(EULA));
+			//System.Xml.Serialization.XmlSerializer writer = 
+			//	new System.Xml.Serialization.XmlSerializer(typeof(EULA));
 
-			System.IO.StreamWriter file = new System.IO.StreamWriter(fileName);
-			writer.Serialize(file, eula);
-			file.Close();
+			//System.IO.StreamWriter file = new System.IO.StreamWriter(fileName);
+			//writer.Serialize(file, eula);
+			//file.Close();
 		}
 	}
 }
