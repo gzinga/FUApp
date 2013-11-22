@@ -6,6 +6,7 @@ using System.Collections;
 using System.Xml;
 using System.IO;
 using MonoTouch.MessageUI;
+using MonoTouch.CoreData;
 
 namespace FUCounter_App
 {
@@ -13,6 +14,7 @@ namespace FUCounter_App
 		protected string[] tableItems;
 		protected string cellIdentifier = "TableCell";
 		public int lastSelectedRow;
+
 		public TableSource (string[] items)
 		{
 			tableItems = items;
@@ -140,30 +142,45 @@ namespace FUCounter_App
 			LabelHairCount.BackgroundColor = UIColor.Orange;
 		}
 
-
-
-		public override bool ShouldAutorotateToInterfaceOrientation (UIInterfaceOrientation toInterfaceOrientation)
+		public override bool ShouldAutorotate ()
 		{
-			// Return true for supported orientations
-			if (toInterfaceOrientation == UIInterfaceOrientation.LandscapeLeft ||
-			    toInterfaceOrientation == UIInterfaceOrientation.LandscapeRight ||
-			    toInterfaceOrientation == UIInterfaceOrientation.PortraitUpsideDown)
-				return false;
 			return true;
 		}
 
+		public override UIInterfaceOrientationMask GetSupportedInterfaceOrientations ()
+		{
+			return UIInterfaceOrientationMask.Portrait;
+		}
+
+		public override UIInterfaceOrientation PreferredInterfaceOrientationForPresentation ()
+		{
+			return UIInterfaceOrientation.Portrait;
+		}
+
+		//public override bool ShouldAutorotateToInterfaceOrientation (UIInterfaceOrientation toInterfaceOrientation)
+		//{
+			// Return true for supported orientations
+		//	if (toInterfaceOrientation == UIInterfaceOrientation.LandscapeLeft ||
+		//	    toInterfaceOrientation == UIInterfaceOrientation.LandscapeRight ||
+		//	    toInterfaceOrientation == UIInterfaceOrientation.PortraitUpsideDown)
+		//		return false;
+		//	return true;
+		//}
 
 		private void UpdateTableView(bool clear)
 		{
 			if (clear == true) {
 				String[] tableItems = new string[1];
-				tableItems[0] =string.Format("TOTAL # {0}, TX: {1:0.0} , DX: {2:0.0}", 0, 0, 0);
+				tableItems[0] =string.Format("TOTAL # {0}, TX%: {1:0.0} , DX%: {2:0.0}", 0, 0, 0);
 				ResultsView.Source = new TableSource (tableItems);
 				ResultsView.ReloadData ();
 				return;
 			}
 			ArrayList tableList = new ArrayList ();
-			string a =string.Format("TOTAL # {0}, TX: {1:0.0} , DX: {2:0.0}", MasterRecord.TotalNumberOfGrafts, MasterRecord.totalTX, MasterRecord.totalDX);
+			double disc = (double)MasterRecord.totalDX / (double)MasterRecord.TotalNumberOfGrafts;
+			disc *= 100.0;
+
+			string a =string.Format("TOTAL # {0}, TX%: {1:0.0} , DX%: {2:0.0}", MasterRecord.TotalNumberOfGrafts, MasterRecord.totalTX, disc);
 			int count = 0;
 			tableList.Add(a);
 			foreach (object obj in MasterRecord.AllGroups) 
@@ -171,11 +188,13 @@ namespace FUCounter_App
 				GroupData group = (GroupData)obj;
 				if (group.Active == false)
 					continue;
-				a = string.Format ("Group {0}, Total #: {1}, total TX: {2:0.0} , DX: {3:0.0}", 
+				disc = (double)(group).totalDX / (double)group._allRecords.Count;
+				disc *= 100.0;
+				a = string.Format ("Group {0}, Total #: {1}, total TX%: {2:0.0} , DX%: {3:0.0}", 
 					group.group + 1,
 					group._allRecords.Count,
 					(group).totalTX,
-					(group).totalDX);
+					disc);
 				count++;
 				tableList.Add(a);
 			}
