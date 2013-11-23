@@ -62,6 +62,13 @@ namespace FUCounter_App
 			//this.DismissViewController(true,null);
 		}
 
+		partial void GoHome (MonoTouch.Foundation.NSObject sender)
+		{
+			// finds the latest saved file within the day
+
+
+		}
+
 		public override void PrepareForSegue (UIStoryboardSegue segue, NSObject sender)
 		{
 			base.PrepareForSegue (segue, sender);
@@ -83,6 +90,11 @@ namespace FUCounter_App
 			// deletes the file
 			File.Delete(FileToDelete);
 			ReloadListOfFiles ();
+		}
+
+		public void SetHomeButton(string filetoLoad)
+		{
+			FileToLoad = filetoLoad;
 		}
 	}
 }

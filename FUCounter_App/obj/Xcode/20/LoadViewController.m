@@ -14,6 +14,9 @@
 - (IBAction)LoadSelectedRecord:(id)sender {
 }
 
+- (IBAction)GoHome:(id)sender {
+}
+
 - (IBAction)DeleteRecord:(id)sender {
 }
 

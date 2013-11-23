@@ -37,7 +37,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test" borderStyle="roundedRect" minimumFontSize="17" id="GG0-8B-Hre">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="GG0-8B-Hre">
                                 <rect key="frame" x="146" y="79" width="188" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -790,6 +790,7 @@ Fax:  (408) 883-6889</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="GoHome:" destination="Odq-zl-F83" eventType="touchUpInside" id="Wwe-h4-d7s"/>
                                     <segue destination="2" kind="modal" id="bEV-cl-lzs"/>
                                 </connections>
                             </button>
@@ -822,6 +823,6 @@ Fax:  (408) 883-6889</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="YTU-ge-B88"/>
+        <segue reference="bEV-cl-lzs"/>
     </inferredMetricsTieBreakers>
 </document>

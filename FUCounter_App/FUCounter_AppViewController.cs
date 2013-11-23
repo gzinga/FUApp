@@ -267,6 +267,10 @@ namespace FUCounter_App
 				TerminalHairCountBox.Text = HairCountBox.Text;
 				DiscardedSwitch.On = false;
 			}
+			else if (_workflowCounter == 3)
+			{
+				LabelTerminalHairCount.BackgroundColor = UIColor.White;
+			}
 				GraftRecord rec = new GraftRecord(Convert.ToInt16(HairCountBox.Text),Convert.ToInt16(TxdHairCountBox.Text),
 			                                   Convert.ToInt16(TerminalHairCountBox.Text),
 			                                   Convert.ToInt16(TxdHairCountBox.Text),DiscardedSwitch.On,
@@ -427,7 +431,12 @@ namespace FUCounter_App
 
 		public void LoadFile(String fileName)
 		{
+			if (fileName == null || fileName == ".xml") {
+				ResetView ();
+				return;
+			}
 			if (fileName == string.Empty) {
+				ResetView ();
 				UIAlertView alert = new UIAlertView ("File Load", "You did not select a file to load", null, "OK", null);
 				alert.Show();
 				return;
@@ -569,20 +578,6 @@ namespace FUCounter_App
 
 		}
 
-		public override void PrepareForSegue (UIStoryboardSegue segue, NSObject sender)
-		{
-			base.PrepareForSegue (segue, sender);
-
-			//(LoadViewController)segue.DestinationViewController
-			// do first a control on the Identifier for your segue
-			//if (segue.Identifier.Equals("your_identifier")) {
-
-
-				//var myData = (CustomerViewController)segue.DestinationViewController;
-				//view.MyData = dataToInject;
-			//}
-		}
-
 		partial void TechIDDidEnd (MonoTouch.Foundation.NSObject sender)
 		{
 			MasterRecord.TechID = TechID.Text;
@@ -607,6 +602,17 @@ namespace FUCounter_App
 			NSData data = NSData.FromFile (fileName);
 			_mailController.AddAttachmentData(data,"text/plain",MasterRecord.PatientID + ".FU1");
 			this.PresentViewController (_mailController, true, null);
+		}
+
+		public override void PrepareForSegue (UIStoryboardSegue segue, NSObject sender)
+		{
+			base.PrepareForSegue (segue, sender);
+			string filetoreload = PatientID.Text;
+			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+			((LoadViewController)segue.DestinationViewController).SetHomeButton(doc + "/" + filetoreload + ".xml");
+
+			if (PatientID.Text == "") 
+				((LoadViewController)segue.DestinationViewController).SetHomeButton(null);
 		}
 	}
 }

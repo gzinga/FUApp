@@ -18,6 +18,9 @@ namespace FUCounter_App
 		[Action ("DeleteRecord:")]
 		partial void DeleteRecord (MonoTouch.Foundation.NSObject sender);
 
+		[Action ("GoHome:")]
+		partial void GoHome (MonoTouch.Foundation.NSObject sender);
+
 		[Action ("LoadSelectedRecord:")]
 		partial void LoadSelectedRecord (MonoTouch.Foundation.NSObject sender);
 		
