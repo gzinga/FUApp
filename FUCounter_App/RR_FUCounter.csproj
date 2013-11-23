@@ -122,6 +122,10 @@
     <Compile Include="EULAViewController.designer.cs">
       <DependentUpon>EULAViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="RRAdBannerView.cs" />
+    <Compile Include="RRAdBannerView.designer.cs">
+      <DependentUpon>RRAdBannerView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />

@@ -609,10 +609,15 @@ namespace FUCounter_App
 			base.PrepareForSegue (segue, sender);
 			string filetoreload = PatientID.Text;
 			var doc = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-			((LoadViewController)segue.DestinationViewController).SetHomeButton(doc + "/" + filetoreload + ".xml");
+			try{
+				((LoadViewController)segue.DestinationViewController).SetHomeButton(doc + "/" + filetoreload + ".xml");
 
-			if (PatientID.Text == "") 
-				((LoadViewController)segue.DestinationViewController).SetHomeButton(null);
+				if (PatientID.Text == "") 
+					((LoadViewController)segue.DestinationViewController).SetHomeButton(null);
+				}
+			catch (Exception e) {
+
+			}
 		}
 	}
 }

@@ -1,3 +1,6 @@
-/Users/gzinga/Skydrive/FUCounter_App/FUCounter_App/obj/iPhone/Release/mtouch-cache/Link/monotouch.dll
-/Users/gzinga/Skydrive/FUCounter_App/FUCounter_App/obj/iPhone/Release/mtouch-cache/Link/FUCounter_App.exe
-/Users/gzinga/Skydrive/FUCounter_App/FUCounter_App/obj/iPhone/Release/mtouch-cache/Link/mscorlib.dll
+/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/iPhone/Release/mtouch-cache/Link/monotouch.dll
+/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/iPhone/Release/mtouch-cache/Link/FUCounter_App.exe
+/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/iPhone/Release/mtouch-cache/Link/System.dll
+/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/iPhone/Release/mtouch-cache/Link/System.Xml.dll
+/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/iPhone/Release/mtouch-cache/Link/mscorlib.dll
+/Users/gabrielezingaretti/Documents/Development/FUApp/FUCounter_App/obj/iPhone/Release/mtouch-cache/Link/System.Core.dll
