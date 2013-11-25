@@ -10679,7 +10679,7 @@ image_table:
 
 	.long 1,2,0,5,0
 	.asciz "FUCounter_App"
-	.asciz "AA166633-D26F-4FE3-9BBC-830CB2E0BC3B"
+	.asciz "DF9E13C4-EFD5-4D92-848D-06C649421343"
 	.asciz ""
 	.asciz ""
 	.align 3
@@ -10707,7 +10707,7 @@ got_end:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "AA166633-D26F-4FE3-9BBC-830CB2E0BC3B"
+	.asciz "DF9E13C4-EFD5-4D92-848D-06C649421343"
 .section __TEXT, __const
 	.align 2
 runtime_version:
